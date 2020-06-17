@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG</title>
+    <link rel="stylesheet" href="svg.css"/>
+    <script type="text/javascript" src="./ShapeSVG.js"></script>
+    <script type="text/javascript" src="./Drawing.js"></script>
+    <script type="text/javascript" src="./Menu.js"></script>
+    <script type="text/javascript" src="./View.js"></script>
+</head>
+<body>
+		<table border="1" width="100%" >
+			<tr>
+				<td width="50%"><div  style="text-align: center">Choix des formes<div id="formes"></div><input type="file" id="files" name="files[]" multiple />
+                    <output id="list"></output></div></td>
+				<td width="50%"><div  style="text-align: center">Choix des styles<div id="formesStyle"></div></div></td>
+			</tr>
+			<tr>
+                <td colspan="2">
+                    <div id="ctn-div_shapes"></div>
+				<div style = "text-align: center;" id="divConteneurSVG"> </div>
+			</td></tr>
+        </table>
+        <script>
+
+        window.onload=(function(){ 
+            v = new View();
+            v.showView();
+        })();
+        </script>
+</body>
+</html>
